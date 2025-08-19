@@ -5,8 +5,14 @@
 # Aim: To test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios.  Analyze the quality, accuracy, and depth of the generated responses 
 
 ### AI Tools Required: 
+1. ChatGPT (or any Generative AI tool supporting LLMs)
+
+2. Text editor/Word processor for documentation
+
+3. Spreadsheet/Tabular tool for comparison
 
 # Explanation: 
+```
 Define the Two Prompt Types:
 
 Write a basic Prompt: Clear, detailed, and structured prompts that give specific instructions or context to guide the model.
@@ -31,8 +37,36 @@ Deliverables:
 A table comparing ChatGPT's responses to naïve and basic prompts across all scenarios.
 Analysis of how prompt clarity impacts the quality, accuracy, and depth of ChatGPT’s outputs.
 Summary of findings with insights on how to structure prompts for optimal results when using ChatGPT.
-
+```
 
 # OUTPUT
+```
+| Scenario              | Naïve Prompt Output                     | Basic Prompt Output                            | Analysis (Quality, Accuracy, Depth) |
+| --------------------- | --------------------------------------- | ---------------------------------------------- | ----------------------------------- |
+| Creative Story        | Short, vague story without clear flow   | Detailed, structured story with better plot    | Basic prompt gave richer output     |
+| Factual Question      | Partially correct, missing details      | Accurate and well-explained answer             | Basic prompt improved accuracy      |
+| Article Summarization | Very brief, missing key points          | Concise, clear summary with main ideas covered | Basic prompt provided better depth  |
+| Advice/Recommendation | General suggestions, not very practical | Practical, step-by-step recommendations        | Basic prompt improved usefulness    |
+Analysis
 
-# RESULT: The prompt for the above said problem executed successfully
+1. Naïve prompts produced vague, generic, and less structured responses.
+
+2. Basic prompts consistently improved quality, accuracy, and depth of outputs.
+
+3. In some creative tasks, naïve prompts still generated acceptable results, but refining the prompt added coherence and richness.
+
+4. Clear, well-structured prompts guide the model better, reducing ambiguity and improving usability of the response.
+
+Summary of Findings
+
+1. Prompt clarity directly impacts output quality.
+
+2. Basic (structured) prompts consistently outperform naïve prompts.
+
+3. For factual, summarization, and advice tasks → structured prompts ensure accuracy and completeness.
+
+3. For creative tasks → naïve prompts can still work but structured prompts enhance creativity and richness.
+```
+# Result
+
+Thus, the experiment comparing naïve and basic prompts was executed successfully. It was observed that structured prompts improve the accuracy, quality, and depth of ChatGPT’s responses across most scenarios.
