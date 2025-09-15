@@ -79,8 +79,6 @@ Renewable energy comes from natural sources like sunlight, wind, rain, tides, an
 Typical Output:
 “Renewable energy refers to power derived from naturally replenishing sources such as sunlight, wind, rain, tides, and geothermal heat. These resources are becoming the focus of worldwide energy policy because they reduce dependence on fossil fuels and help cut carbon emissions, a major driver of climate change. Falling technology costs have made solar and wind power especially attractive, prompting governments to invest heavily in renewable infrastructure. Despite this progress, several challenges remain. Energy storage systems must improve to ensure a steady power supply when sunlight or wind is unavailable, and electrical grids need upgrades to handle the variable output from renewable sources. Balancing energy supply with fluctuating demand is another ongoing issue. Addressing these problems will be essential for a smooth global transition to clean, sustainable energy.”
 
-<img width="554" height="221" alt="image" src="https://github.com/user-attachments/assets/c2a46a07-7549-4f13-95a4-bee4f4f7fa78" />
-
 # Gemini:
 Naive Prompt
 Scenario: Creative Story Generation
@@ -100,6 +98,7 @@ AI Output (Summary):
 "Dr. Anya Sharma adjusted her helmet, the crimson dust of Mars swirling around her habitat. For weeks, the seismic sensors had pinged with anomalous readings beneath Olympus Mons—too regular for natural phenomena. Today, she'd finally reached the deepest anomaly. Her drilling probe breached a cavern, revealing a faint, bioluminescent glow. As she lowered a camera, strange, crystalline spores drifted into view, vibrating with an eerie, rhythmic hum. A sudden tremor shook the chamber, and a fissure cracked open in the cavern floor, a deeper light pulsing within. Anya's comms crackled with static, isolating her. Was it truly life, or something far more ancient and menacing awakening?"
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/6dd01af0-f617-4cdf-9720-82af99badea4" />
+
 # Prompt:
 1. Zero-Shot Prompting (New Example)
 Explanation: The model performs a task directly without any examples, relying on its general knowledge.
