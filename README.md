@@ -100,6 +100,44 @@ AI Output (Summary):
 "Dr. Anya Sharma adjusted her helmet, the crimson dust of Mars swirling around her habitat. For weeks, the seismic sensors had pinged with anomalous readings beneath Olympus Mons—too regular for natural phenomena. Today, she'd finally reached the deepest anomaly. Her drilling probe breached a cavern, revealing a faint, bioluminescent glow. As she lowered a camera, strange, crystalline spores drifted into view, vibrating with an eerie, rhythmic hum. A sudden tremor shook the chamber, and a fissure cracked open in the cavern floor, a deeper light pulsing within. Anya's comms crackled with static, isolating her. Was it truly life, or something far more ancient and menacing awakening?"
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/6dd01af0-f617-4cdf-9720-82af99badea4" />
+# Prompt:
+1. Zero-Shot Prompting (New Example)
+Explanation: The model performs a task directly without any examples, relying on its general knowledge.
+
+New Example:
+Prompt: "What is the capital of France?"
+
+Expected AI Output: "Paris"
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/d49aa1b5-ecf1-4a6f-b8d5-7e9119510859" />
+
+2. Few-Shot Prompting (New Example)
+Explanation: The model is given a few examples to understand the pattern before solving a new problem.
+
+New Example:
+Prompt:
+"Identify the odd one out in the following lists:
+
+Apple, Banana, Carrot, Orange -> Carrot
+Dog, Cat, Bird, Table -> Table
+Chair, Desk, Sofa, Book -> ?"
+
+Expected AI Output: "Book"
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/67c99e6d-933b-4046-bbd4-ab48b1b334fe" />
+
+3. Chain-of-Thought (CoT) Prompting (New Example)
+Explanation: The model is encouraged to show intermediate reasoning steps to arrive at the solution for complex tasks.
+
+New Example:
+
+Prompt:
+"I have 3 boxes, and each box contains 5 red balls and 2 blue balls. If I add 1 blue ball to each box, how many blue balls do I have in total across all boxes? Let's think step by step."
+
+Expected AI Output (with CoT):
+"Step 1: Initially, each box has 2 blue balls.
+Step 2: There are 3 boxes, so initially 2 blue balls/box * 3 boxes = 6 blue balls.
+Step 3: 1 blue ball is added to each of the 3 boxes, so 1 blue ball/box * 3 boxes = 3 blue balls added.
+Step 4: Total blue balls = Initial blue balls + Added blue balls = 6 + 3 = 9 blue balls.
+Answer: You have 9 blue balls in total."
 
 # Detailed AnalysiS
 
@@ -121,7 +159,11 @@ AI Output (Summary):
 4. Scenario-Specific Observations
 
    Creative tasks: Even naïve prompts generated acceptable stories, but refining the prompt added coherence and richness.
-   Factual, summarisation, and advice tasks: Structured prompts significantly enhanced accuracy and completeness, proving the necessity of prompt engineering for knowledge intensive queries.
+   Factual, summarisation, and advice tasks: Structured prompts significantly enhanced accuracy and completeness, proving the necessity of prompt engineering for knowledge     intensive queries.
+
+# Comparative Analysis on different types of prompting techniques:
+
+<img width="521" height="263" alt="image" src="https://github.com/user-attachments/assets/0b115087-206b-4903-b48d-a07ab599cb9b" />
 
 # Summary of Findings
 
