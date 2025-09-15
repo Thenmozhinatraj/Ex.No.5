@@ -162,9 +162,6 @@ Answer: You have 9 blue balls in total."
    Creative tasks: Even naïve prompts generated acceptable stories, but refining the prompt added coherence and richness.
    Factual, summarisation, and advice tasks: Structured prompts significantly enhanced accuracy and completeness, proving the necessity of prompt engineering for knowledge     intensive queries.
 
-# Comparative Analysis on different types of prompting techniques:
-
-<img width="521" height="263" alt="image" src="https://github.com/user-attachments/assets/0b115087-206b-4903-b48d-a07ab599cb9b" />
 
 # Summary of Findings
 
