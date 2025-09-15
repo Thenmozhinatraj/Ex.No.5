@@ -2,7 +2,8 @@
 
 # EXP 5: COMPARATIVE ANALYSIS OF DIFFERENT TYPES OF PROMPTING PATTERNS AND EXPLAIN WITH VARIOUS TEST SCENARIOS
 
-# Aim: To test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios.  Analyze the quality, accuracy, and depth of the generated responses 
+# Aim: 
+To test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios.  Analyze the quality, accuracy, and depth of the generated responses 
 
 ### AI Tools Required: 
 1. ChatGPT (or any Generative AI tool supporting LLMs)
@@ -12,61 +13,127 @@
 3. Spreadsheet/Tabular tool for comparison
 
 # Explanation: 
-```
-Define the Two Prompt Types:
+Large Language Models like ChatGPT generate text depending on the context provided in the prompt.
+If the prompt is vague, the model has to “guess” the intention, which may lead to generic or incomplete results.
+When the prompt is structured and explicit, the model can focus on relevant details, leading to more accurate, richer, and well-organized answers.
 
-Write a basic Prompt: Clear, detailed, and structured prompts that give specific instructions or context to guide the model.
-Based on that pattern type refined the prompt and submit that with AI tool.
-Get the ouput and write the report.
+# Types of Prompts
 
-Prepare Multiple Test Scenarios:
-Select various scenarios such as:
-Generating a creative story.
-Answering a factual question.
-Summarizing an article or concept.
-Providing advice or recommendations.
-Or Any other test scenario
-For each scenario, create both a naïve and a basic prompt. Ensure each pair of prompts targets the same task but with different levels of structure.
-Run Experiments with ChatGPT:
-Input the naïve prompt for each scenario and record the generated response.
-Then input the corresponding basic prompt and capture that response.
-Repeat this process for all selected scenarios to gather a full set of results.
-Evaluate Responses : 
-	Compare how ChatGPT performs when given naïve versus basic prompts and analyze the output based on Quality,Accuracy and Depth. Also analyse does ChatGPT consistently provide better results with basic prompts? Are there scenarios where naïve prompts work equally well?
-Deliverables:
-A table comparing ChatGPT's responses to naïve and basic prompts across all scenarios.
-Analysis of how prompt clarity impacts the quality, accuracy, and depth of ChatGPT’s outputs.
-Summary of findings with insights on how to structure prompts for optimal results when using ChatGPT.
-```
+Naïve Prompt
+Definition: A broad or unstructured prompt with minimal guidance.
+Example: “Write a story.”
+Expected Output: Often short, generic, and lacking depth because the AI receives little direction.
+
+Basic / Structured Prompt
+Definition: A clear, detailed prompt providing specific instructions, context, and desired style or constraints.
+Example: “Write a 300-word science-fiction story set on Mars about a scientist who discovers alien life, maintaining a suspenseful tone.”
+Expected Output: Richer content, coherent structure, and better alignment with the user’s intention.
+
+# Procedure
+
+1. Define Prompt Types
+       Created paired prompts (one naïve and one basic) for each chosen task.
+2. Select Multiple Test Scenario
+       Creative story generation.
+       Answering a factual question.
+       Summarising an article or concept.
+       Providing advice or recommendations.
+3. Run Experiments
+       Input the naïve prompt into ChatGPT and record the generated output.
+       Input the corresponding basic prompt and capture its output.
+       Repeated the process for all selected scenarios.
+4. Evaluate Responses
+       Analysed and compared outputs on Quality (coherence, richness)
+       Accuracy (correctness of information), and
+       Depth (level of detail, completeness).
+       Observed whether basic prompts consistently outperform naïve prompts,and noted any situations where naïve prompts worked equally well.
 
 # OUTPUT
-```
-| Scenario              | Naïve Prompt Output                     | Basic Prompt Output                            | Analysis (Quality, Accuracy, Depth) |
-| --------------------- | --------------------------------------- | ---------------------------------------------- | ----------------------------------- |
-| Creative Story        | Short, vague story without clear flow   | Detailed, structured story with better plot    | Basic prompt gave richer output     |
-| Factual Question      | Partially correct, missing details      | Accurate and well-explained answer             | Basic prompt improved accuracy      |
-| Article Summarization | Very brief, missing key points          | Concise, clear summary with main ideas covered | Basic prompt provided better depth  |
-| Advice/Recommendation | General suggestions, not very practical | Practical, step-by-step recommendations        | Basic prompt improved usefulness    |
-Analysis
+<img width="700" height="254" alt="image" src="https://github.com/user-attachments/assets/ad9354bf-6e3c-49c9-9e55-ab26df696e70" />
 
-1. Naïve prompts produced vague, generic, and less structured responses.
 
-2. Basic prompts consistently improved quality, accuracy, and depth of outputs.
+# Chatgpt:
+Naive prompt:
+Input:
+“Summarize the following article about renewable energy.”
 
-3. In some creative tasks, naïve prompts still generated acceptable results, but refining the prompt added coherence and richness.
+Article Excerpt for Testing
+Renewable energy comes from natural sources like sunlight, wind, rain, tides, and geothermal heat. Unlike fossil fuels, these sources are naturally replenished. In recent years, solar and wind power have grown rapidly as technology costs fall. Governments worldwide are investing heavily in renewable infrastructure to cut carbon emissions and combat climate change. However, challenges remain, including energy storage, grid integration, and balancing supply with demand.
 
-4. Clear, well-structured prompts guide the model better, reducing ambiguity and improving usability of the response.
+Typical Output:
 
-Summary of Findings
+“Renewable energy uses natural sources such as sun, wind, water, and heat from the earth. It is increasing globally because it helps reduce carbon emissions and fight climate change, though storage and grid issues still need solutions.”
 
-1. Prompt clarity directly impacts output quality.
+Basic (Structured) Prompt
 
-2. Basic (structured) prompts consistently outperform naïve prompts.
+Input:
+“Summarize the following article about renewable energy in 150–180 words.
+• Highlight the main sources.
+• Explain why global adoption is increasing.
+• Mention at least two key challenges.
+• Write in simple language suitable for high-school students.”
 
-3. For factual, summarization, and advice tasks → structured prompts ensure accuracy and completeness.
+Article Excerpt for Testing
+Renewable energy comes from natural sources like sunlight, wind, rain, tides, and geothermal heat. Unlike fossil fuels, these sources are naturally replenished. In recent years, solar and wind power have grown rapidly as technology costs fall. Governments worldwide are investing heavily in renewable infrastructure to cut carbon emissions and combat climate change. However, challenges remain, including energy storage, grid integration, and balancing supply with demand.
 
-3. For creative tasks → naïve prompts can still work but structured prompts enhance creativity and richness.
-```
+Typical Output:
+“Renewable energy refers to power derived from naturally replenishing sources such as sunlight, wind, rain, tides, and geothermal heat. These resources are becoming the focus of worldwide energy policy because they reduce dependence on fossil fuels and help cut carbon emissions, a major driver of climate change. Falling technology costs have made solar and wind power especially attractive, prompting governments to invest heavily in renewable infrastructure. Despite this progress, several challenges remain. Energy storage systems must improve to ensure a steady power supply when sunlight or wind is unavailable, and electrical grids need upgrades to handle the variable output from renewable sources. Balancing energy supply with fluctuating demand is another ongoing issue. Addressing these problems will be essential for a smooth global transition to clean, sustainable energy.”
+
+<img width="554" height="221" alt="image" src="https://github.com/user-attachments/assets/c2a46a07-7549-4f13-95a4-bee4f4f7fa78" />
+
+# Gemini:
+Naive Prompt
+Scenario: Creative Story Generation
+
+Naive Prompt: Tell me a story.
+
+AI Output:
+"Once upon a time, in a land far away, lived a brave knight. He went on an adventure, fought a dragon, and rescued a princess. They lived happily ever after."
+
+Basic/Structured Prompt:
+
+Scenario: Creative Story Generation
+
+Basic/Structured Prompt: Write a 300-word story set on Mars about a scientist who discovers alien life, using a suspenseful tone.
+
+AI Output (Summary):
+"Dr. Anya Sharma adjusted her helmet, the crimson dust of Mars swirling around her habitat. For weeks, the seismic sensors had pinged with anomalous readings beneath Olympus Mons—too regular for natural phenomena. Today, she'd finally reached the deepest anomaly. Her drilling probe breached a cavern, revealing a faint, bioluminescent glow. As she lowered a camera, strange, crystalline spores drifted into view, vibrating with an eerie, rhythmic hum. A sudden tremor shook the chamber, and a fissure cracked open in the cavern floor, a deeper light pulsing within. Anya's comms crackled with static, isolating her. Was it truly life, or something far more ancient and menacing awakening?"
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/6dd01af0-f617-4cdf-9720-82af99badea4" />
+
+# Detailed AnalysiS
+
+1. Quality of Output
+
+    Naïve prompts produced responses that were generic, less organised, and often lacking vivid details.
+    Basic prompts resulted in well-structured, polished, and engaging content.
+
+2. Accuracy of Information
+
+   Naïve prompts sometimes led to partially correct or incomplete facts.
+   Structured prompts guided the AI to focus on essential details, improving factual correctness.
+
+3. Depth of Explanation
+
+   Naïve prompts typically gave surface-level answers.
+   Basic prompts encouraged the model to elaborate, provide context, and add supporting points.
+
+4. Scenario-Specific Observations
+
+   Creative tasks: Even naïve prompts generated acceptable stories, but refining the prompt added coherence and richness.
+   Factual, summarisation, and advice tasks: Structured prompts significantly enhanced accuracy and completeness, proving the necessity of prompt engineering for knowledge intensive queries.
+
+# Summary of Findings
+
+1. Prompt clarity directly influences output quality.
+
+2. Basic (structured) prompts consistently outperform naïve prompts across most scenarios.
+
+3. For factual questions, summarisation, and advice, structured prompts ensure accuracy and completeness.
+
+4. For creative tasks, naïve prompts can still produce interesting results, but structured prompts provide better narrative flow and richer details.
+
 # Result
 
-Thus, the experiment comparing naïve and basic prompts was executed successfully. It was observed that structured prompts improve the accuracy, quality, and depth of ChatGPT’s responses across most scenarios.
+The experiment successfully demonstrated that structured prompt engineering improves the quality, accuracy, and depth of ChatGPT’s responses across diverse tasks.
+While naïve prompts can work for highly creative tasks, well-designed basic prompts consistently deliver superior, reliable outputs and are recommended for all professional or academic applications.
