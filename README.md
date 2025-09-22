@@ -32,106 +32,109 @@ Expected Output: Richer content, coherent structure, and better alignment with t
 # Procedure
 
 1. Define Prompt Types
-       Created paired prompts (one naïve and one basic) for each chosen task.
+- Created paired prompts (one naïve and one basic) for each chosen task.
 2. Select Multiple Test Scenario
-       Creative story generation.
-       Answering a factual question.
-       Summarising an article or concept.
-       Providing advice or recommendations.
+- Creative story generation.
+- Answering a factual question.
+- Summarising an article or concept.
+- Providing advice or recommendations.
 3. Run Experiments
-       Input the naïve prompt into ChatGPT and record the generated output.
-       Input the corresponding basic prompt and capture its output.
-       Repeated the process for all selected scenarios.
+- Input the naïve prompt into ChatGPT and record the generated output.
+- Input the corresponding basic prompt and capture its output.
+- Repeated the process for all selected scenarios.
 4. Evaluate Responses
-       Analysed and compared outputs on Quality (coherence, richness)
-       Accuracy (correctness of information), and
-       Depth (level of detail, completeness).
-       Observed whether basic prompts consistently outperform naïve prompts,and noted any situations where naïve prompts worked equally well.
+- Analysed and compared outputs on Quality (coherence, richness)
+- Accuracy (correctness of information), and
+- Depth (level of detail, completeness).
+- Observed whether basic prompts consistently outperform naïve prompts,and noted any situations where naïve prompts worked equally well.
 
 # OUTPUT
 <img width="700" height="254" alt="image" src="https://github.com/user-attachments/assets/ad9354bf-6e3c-49c9-9e55-ab26df696e70" />
 
 
 # Chatgpt:
-Naive prompt:
-Input:
+- Naive prompt:
+- Input:
 “Summarize the following article about renewable energy.”
 
-Article Excerpt for Testing
-Renewable energy comes from natural sources like sunlight, wind, rain, tides, and geothermal heat. Unlike fossil fuels, these sources are naturally replenished. In recent years, solar and wind power have grown rapidly as technology costs fall. Governments worldwide are investing heavily in renewable infrastructure to cut carbon emissions and combat climate change. However, challenges remain, including energy storage, grid integration, and balancing supply with demand.
+### Article Excerpt for Testing
+- Renewable energy comes from natural sources like sunlight, wind, rain, tides, and geothermal heat. Unlike fossil fuels, these sources are naturally replenished. In recent years, solar and wind power have grown rapidly as technology costs fall. Governments worldwide are investing heavily in renewable infrastructure to cut carbon emissions and combat climate change. However, challenges remain, including energy storage, grid integration, and balancing supply with demand.
 
 Typical Output:
 
-“Renewable energy uses natural sources such as sun, wind, water, and heat from the earth. It is increasing globally because it helps reduce carbon emissions and fight climate change, though storage and grid issues still need solutions.”
+- “Renewable energy uses natural sources such as sun, wind, water, and heat from the earth. It is increasing globally because it helps reduce carbon emissions and fight climate change, though storage and grid issues still need solutions.”
 
-Basic (Structured) Prompt
+### Basic (Structured) Prompt
 
-Input:
+- Input:
 “Summarize the following article about renewable energy in 150–180 words.
-• Highlight the main sources.
-• Explain why global adoption is increasing.
-• Mention at least two key challenges.
-• Write in simple language suitable for high-school students.”
+- Highlight the main sources.
+- Explain why global adoption is increasing.
+- Mention at least two key challenges.
+- Write in simple language suitable for high-school students.”
 
-Article Excerpt for Testing
+### Article Excerpt for Testing
+
 Renewable energy comes from natural sources like sunlight, wind, rain, tides, and geothermal heat. Unlike fossil fuels, these sources are naturally replenished. In recent years, solar and wind power have grown rapidly as technology costs fall. Governments worldwide are investing heavily in renewable infrastructure to cut carbon emissions and combat climate change. However, challenges remain, including energy storage, grid integration, and balancing supply with demand.
 
-Typical Output:
+### Typical Output:
+
 “Renewable energy refers to power derived from naturally replenishing sources such as sunlight, wind, rain, tides, and geothermal heat. These resources are becoming the focus of worldwide energy policy because they reduce dependence on fossil fuels and help cut carbon emissions, a major driver of climate change. Falling technology costs have made solar and wind power especially attractive, prompting governments to invest heavily in renewable infrastructure. Despite this progress, several challenges remain. Energy storage systems must improve to ensure a steady power supply when sunlight or wind is unavailable, and electrical grids need upgrades to handle the variable output from renewable sources. Balancing energy supply with fluctuating demand is another ongoing issue. Addressing these problems will be essential for a smooth global transition to clean, sustainable energy.”
 
 # Gemini:
-Naive Prompt
+- Naive Prompt
 Scenario: Creative Story Generation
 
-Naive Prompt: Tell me a story.
+- Naive Prompt: Tell me a story.
 
-AI Output:
+- AI Output:
 "Once upon a time, in a land far away, lived a brave knight. He went on an adventure, fought a dragon, and rescued a princess. They lived happily ever after."
 
-Basic/Structured Prompt:
-
+### Basic/Structured Prompt:
 Scenario: Creative Story Generation
 
 Basic/Structured Prompt: Write a 300-word story set on Mars about a scientist who discovers alien life, using a suspenseful tone.
 
-AI Output (Summary):
+### AI Output (Summary):
+
 "Dr. Anya Sharma adjusted her helmet, the crimson dust of Mars swirling around her habitat. For weeks, the seismic sensors had pinged with anomalous readings beneath Olympus Mons—too regular for natural phenomena. Today, she'd finally reached the deepest anomaly. Her drilling probe breached a cavern, revealing a faint, bioluminescent glow. As she lowered a camera, strange, crystalline spores drifted into view, vibrating with an eerie, rhythmic hum. A sudden tremor shook the chamber, and a fissure cracked open in the cavern floor, a deeper light pulsing within. Anya's comms crackled with static, isolating her. Was it truly life, or something far more ancient and menacing awakening?"
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/6dd01af0-f617-4cdf-9720-82af99badea4" />
 
-# Prompt:
+## Prompt:
 1. Zero-Shot Prompting (New Example)
 Explanation: The model performs a task directly without any examples, relying on its general knowledge.
 
-New Example:
+- New Example:
 Prompt: "What is the capital of France?"
 
-Expected AI Output: "Paris"
+- Expected AI Output: "Paris"
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/d49aa1b5-ecf1-4a6f-b8d5-7e9119510859" />
 
 2. Few-Shot Prompting (New Example)
 Explanation: The model is given a few examples to understand the pattern before solving a new problem.
 
-New Example:
+- New Example:
 Prompt:
 "Identify the odd one out in the following lists:
 
+```
 Apple, Banana, Carrot, Orange -> Carrot
 Dog, Cat, Bird, Table -> Table
 Chair, Desk, Sofa, Book -> ?"
 
-Expected AI Output: "Book"
+```
+- Expected AI Output: "Book"
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/67c99e6d-933b-4046-bbd4-ab48b1b334fe" />
 
 3. Chain-of-Thought (CoT) Prompting (New Example)
 Explanation: The model is encouraged to show intermediate reasoning steps to arrive at the solution for complex tasks.
 
-New Example:
-
+- New Example:
 Prompt:
 "I have 3 boxes, and each box contains 5 red balls and 2 blue balls. If I add 1 blue ball to each box, how many blue balls do I have in total across all boxes? Let's think step by step."
 
-Expected AI Output (with CoT):
+- Expected AI Output (with CoT):
 "Step 1: Initially, each box has 2 blue balls.
 Step 2: There are 3 boxes, so initially 2 blue balls/box * 3 boxes = 6 blue balls.
 Step 3: 1 blue ball is added to each of the 3 boxes, so 1 blue ball/box * 3 boxes = 3 blue balls added.
@@ -140,27 +143,27 @@ Answer: You have 9 blue balls in total."
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/2afe8827-9e80-4e9f-8c90-947f7cb9da23" />
 
-# Detailed AnalysiS
+# Detailed Analysis
 
 1. Quality of Output
 
-    Naïve prompts produced responses that were generic, less organised, and often lacking vivid details.
-    Basic prompts resulted in well-structured, polished, and engaging content.
+    - Naïve prompts produced responses that were generic, less organised, and often lacking vivid details.
+    - Basic prompts resulted in well-structured, polished, and engaging content.
 
 2. Accuracy of Information
 
-   Naïve prompts sometimes led to partially correct or incomplete facts.
-   Structured prompts guided the AI to focus on essential details, improving factual correctness.
+   - Naïve prompts sometimes led to partially correct or incomplete facts.
+   - Structured prompts guided the AI to focus on essential details, improving factual correctness.
 
 3. Depth of Explanation
 
-   Naïve prompts typically gave surface-level answers.
-   Basic prompts encouraged the model to elaborate, provide context, and add supporting points.
+   - Naïve prompts typically gave surface-level answers.
+   - Basic prompts encouraged the model to elaborate, provide context, and add supporting points.
 
 4. Scenario-Specific Observations
 
-   Creative tasks: Even naïve prompts generated acceptable stories, but refining the prompt added coherence and richness.
-   Factual, summarisation, and advice tasks: Structured prompts significantly enhanced accuracy and completeness, proving the necessity of prompt engineering for knowledge     intensive queries.
+   - Creative tasks: Even naïve prompts generated acceptable stories, but refining the prompt added coherence and richness.
+   - Factual, summarisation, and advice tasks: Structured prompts significantly enhanced accuracy and completeness, proving the necessity of prompt engineering for knowledge intensive queries.
 
 
 # Summary of Findings
