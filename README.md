@@ -13,9 +13,9 @@ To test and compare how different pattern models respond to various prompts (bro
 3. Spreadsheet/Tabular tool for comparison
 
 # Explanation: 
-Large Language Models like ChatGPT generate text depending on the context provided in the prompt.
-If the prompt is vague, the model has to “guess” the intention, which may lead to generic or incomplete results.
-When the prompt is structured and explicit, the model can focus on relevant details, leading to more accurate, richer, and well-organized answers.
+- Large Language Models like ChatGPT generate text depending on the context provided in the prompt.
+- If the prompt is vague, the model has to “guess” the intention, which may lead to generic or incomplete results.
+- When the prompt is structured and explicit, the model can focus on relevant details, leading to more accurate, richer, and well-organized answers.
 
 # Types of Prompts
 
