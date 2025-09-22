@@ -33,15 +33,18 @@ Expected Output: Richer content, coherent structure, and better alignment with t
 
 1. Define Prompt Types
 - Created paired prompts (one naïve and one basic) for each chosen task.
+  
 2. Select Multiple Test Scenario
 - Creative story generation.
 - Answering a factual question.
 - Summarising an article or concept.
 - Providing advice or recommendations.
+  
 3. Run Experiments
 - Input the naïve prompt into ChatGPT and record the generated output.
 - Input the corresponding basic prompt and capture its output.
 - Repeated the process for all selected scenarios.
+  
 4. Evaluate Responses
 - Analysed and compared outputs on Quality (coherence, richness)
 - Accuracy (correctness of information), and
@@ -135,14 +138,12 @@ Prompt:
 "I have 3 boxes, and each box contains 5 red balls and 2 blue balls. If I add 1 blue ball to each box, how many blue balls do I have in total across all boxes? Let's think step by step."
 
 - Expected AI Output (with CoT):
-```
-"Step 1: Initially, each box has 2 blue balls.
-Step 2: There are 3 boxes, so initially 2 blue balls/box * 3 boxes = 6 blue balls.
-Step 3: 1 blue ball is added to each of the 3 boxes, so 1 blue ball/box * 3 boxes = 3 blue balls added.
-Step 4: Total blue balls = Initial blue balls + Added blue balls = 6 + 3 = 9 blue balls.
-Answer: You have 9 blue balls in total."
+- Step 1: Initially, each box has 2 blue balls.
+- Step 2: There are 3 boxes, so initially 2 blue balls/box * 3 boxes = 6 blue balls.
+- Step 3: 1 blue ball is added to each of the 3 boxes, so 1 blue ball/box * 3 boxes = 3 blue balls added.
+- Step 4: Total blue balls = Initial blue balls + Added blue balls = 6 + 3 = 9 blue balls.
+- Answer: You have 9 blue balls in total."
 
-```
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/2afe8827-9e80-4e9f-8c90-947f7cb9da23" />
 
 # Detailed Analysis
