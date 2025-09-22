@@ -20,14 +20,14 @@ To test and compare how different pattern models respond to various prompts (bro
 # Types of Prompts
 
 Naïve Prompt
-Definition: A broad or unstructured prompt with minimal guidance.
-Example: “Write a story.”
-Expected Output: Often short, generic, and lacking depth because the AI receives little direction.
+- Definition: A broad or unstructured prompt with minimal guidance.
+- Example: “Write a story.”
+- Expected Output: Often short, generic, and lacking depth because the AI receives little direction.
 
 Basic / Structured Prompt
-Definition: A clear, detailed prompt providing specific instructions, context, and desired style or constraints.
-Example: “Write a 300-word science-fiction story set on Mars about a scientist who discovers alien life, maintaining a suspenseful tone.”
-Expected Output: Richer content, coherent structure, and better alignment with the user’s intention.
+- Definition: A clear, detailed prompt providing specific instructions, context, and desired style or constraints.
+- Example: “Write a 300-word science-fiction story set on Mars about a scientist who discovers alien life, maintaining a suspenseful tone.”
+- Expected Output: Richer content, coherent structure, and better alignment with the user’s intention.
 
 # Procedure
 
